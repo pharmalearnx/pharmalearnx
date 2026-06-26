@@ -1,0 +1,20 @@
+Upload these files/folders to GitHub:
+
+app.py
+wsgi.py
+run.py
+requirements.txt
+Procfile
+render.yaml
+README.md
+.env.example
+static folder
+
+Do NOT upload:
+venv
+__pycache__
+instance
+.sqlite3 database file
+ZIP file itself
+
+After upload, click Commit changes.

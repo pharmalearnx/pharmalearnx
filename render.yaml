@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: plx-pharmalearnx-lms
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: SESSION_COOKIE_SECURE
+        value: "true"
+      - key: ENABLE_HSTS
+        value: "true"
+      - key: ADMIN_EMAIL
+        value: admin@pharmalearnx.com
+      - key: ADMIN_PASSWORD
+        sync: false
