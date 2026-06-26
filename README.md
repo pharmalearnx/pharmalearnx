@@ -15,17 +15,13 @@ Designed for no-domain/no-server commercial workflow:
 8. Admin shares Google Drive folder with student's Gmail.
 9. Admin marks Drive access as given.
 10. Student completes quiz and gets certificate.
+Admin login credentials will be set securely in the hosting environment.
+Default/admin password must not be stored in GitHub.
 
-Admin Login:
-Email: admin@pharmalearnx.com
-Password: admin123
 
-Payment Numbers:
-bKash: 01618881616
-Nagad: 01618881616
 
-Google Drive Email:
-Pharmalearnx@gmail.com
+
+
 
 How to run:
 python -m venv venv
@@ -33,8 +29,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 python run.py
 
-Open:
-http://127.0.0.1:5000
+
 
 Important:
 This local Python app is your admin management system. Without hosting/server, students cannot access it from their own devices unless you run it on a shared network or deploy it later. Commercially, use Google Drive access sharing + manual payment approval.
