@@ -1,4 +1,4 @@
-import re
+
 from __future__ import annotations
 
 import csv
@@ -7,6 +7,7 @@ import os
 import sqlite3
 import secrets
 import time
+import re
 from datetime import datetime
 from functools import wraps
 from pathlib import Path
