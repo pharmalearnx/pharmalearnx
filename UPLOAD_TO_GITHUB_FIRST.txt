@@ -1,5 +1,4 @@
-Upload these files/folders to GitHub:
-
+Upload these files/folders to GitHub and commit changes:
 app.py
 wsgi.py
 run.py
@@ -8,13 +7,12 @@ Procfile
 render.yaml
 README.md
 .env.example
-static folder
+static/
 
-Do NOT upload:
+Do not upload:
 venv
 __pycache__
 instance
-.sqlite3 database file
-ZIP file itself
-
-After upload, click Commit changes.
+.sqlite3
+real .env
+student data
