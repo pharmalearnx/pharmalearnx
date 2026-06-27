@@ -74,7 +74,7 @@ def add_security_headers(response):
     response.headers["X-Frame-Options"]="DENY"; response.headers["X-Content-Type-Options"]="nosniff"; response.headers["Referrer-Policy"]="strict-origin-when-cross-origin"; response.headers["Permissions-Policy"]="camera=(), microphone=(), geolocation=()"
     if os.environ.get("ENABLE_HSTS","false").lower()=="true": response.headers["Strict-Transport-Security"]="max-age=31536000; includeSubDomains"
     return response
-def render_page(title,body,**ctx): return render_template_string(BASE,title=title,body=inject_csrf(body),style=STYLE,current_user=current_user(),is_admin=is_admin(),setting=setting,money=money,**ctx)
+def render_page(title,body,**ctx): return render_template_string(BASE,title=title,body=inject_csrf(body),style=STYLE,current_user=current_user(),is_admin=is_admin(),setting=setting,money=money,csrf_token=csrf_token,**ctx)
 def login_required(fn):
     @wraps(fn)
     def wrapper(*args,**kwargs):
